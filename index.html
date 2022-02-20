@@ -1,90 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="./css/index.css"/>
-    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css">
-</head>
-<body>
-
-<header>
-    <nav class="navbar navbar-dark bg-primary">
-        <h2>Formularios</h2>
-      </nav>  
-</header>
-<main class="container">
-<!-- <div class="row">
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+          <h2>Formularios</h2>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- <div class="row">
     <img src="https://www.globalti.com.co/wp-content/uploads/2019/08/BOTON-Formulario-inscripcion.png" alt="Logo formularios">
 </div> -->
-
-<section class="row">
-    <div class="col">
-    <div class="mb-3">
-        <label for="Nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
-      </div>
-      <div class="mb-3">
-        <label for="Apellido" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
-    </div>
+      <section class="row">
+        <div class="col">
+          <h2>Registro de Estudiantes</h2>
+          <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Nombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Apellido" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Apellido"
+              placeholder="Apellido"
+            />
+          </div>
           <form class="row g-3">
-        <div class="col-md-6">
-          <label for="Correo" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="Correo">
+            <div class="col-mb-3">
+              <label for="Correo" class="form-label">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Correo"
+                placeholder="Correo"
+              />
+            </div>
+            <div class="col-12">
+              <label for="Ciudad" class="form-label">Ciudad</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Ciudad"
+                placeholder="Ciudad"
+              />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Aceptar términos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Registrar</button>
+            </div>
+          </form>
         </div>
-        <div class="col-md-6">
-          <label for="Contraseña" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="Contraseña">
-        </div>
-        <div class="col-12">
-          <label for="Direccion" class="form-label">Direccion</label>
-          <input type="text" class="form-control" id="Direccion" placeholder="Direccion">
-        </div>
-        <div class="col-md-6">
-          <label for="Ciudad" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="Ciudad">
-        </div>
-        <div class="col-md-4">
-          <label for="Departamento" class="form-label">Departamento</label>
-          <select id="Departamento" class="form-select">
-            <option selected>Elige</option>
-            <option>Arequipa</option>
-            <option>Ayacucho</option>
-            <option>Callao</option>
-            <option>Cusco</option>
-            <option>Lima</option>
-            <option>Piura</option>
-            <option>Tacna</option>
-            <option>Tumbes</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="Zip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="Zip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
+        <div class="col">
+          <h2>Promedio de Estudiantes</h2>
+          <div class="col-md-4">
+            <label for="Estudiante" class="form-label">Estudiante</label>
+            <select id="Estudiante" class="form-select mb-3">
+              <option selected>Elige</option>
+              <option>Moises</option>
+              <option>Jeanfranco</option>
+              <option>Gina</option>
+              <option>Josue</option>
+              <option>Valeria</option>
+              <option>Ximena</option>
+              <option>Bruno</option>
+              <option>Clarissa</option>
+              <option>Claudia</option>
+              <option>Diego</option>
+              <option>Febe</option>
+              <option>Kely</option>
+              <option>Miriam</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nota 1"
+                aria-label="Nota 1"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nota 2"
+                aria-label="Nota 2"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nota 3"
+                aria-label="Nota 3"
+              />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary mt-3">
+                Calcular
+              </button>
+            </div>
+            <div class="mb-2 mt-3">
+              <input
+                type="text"
+                class="form-control"
+                id="Promedio"
+                placeholder="Promedio"
+              />
+            </div>
           </div>
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-      </form>
+      </section>
     </div>
-</section>
-
-
-
-
-
-</main>
-<script src="./js/index.js"></script> 
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
