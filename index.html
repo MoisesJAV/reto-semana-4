@@ -12,76 +12,40 @@
     <header>
       <nav class="navbar navbar-dark bg-primary">
         <div class="container">
-          <h2>Formularios</h2>
+          <h2 id="title">Formularios</h2>
         </div>
       </nav>
     </header>
     <div class="container">
-      <!-- <div class="row">
-    <img src="https://www.globalti.com.co/wp-content/uploads/2019/08/BOTON-Formulario-inscripcion.png" alt="Logo formularios">
-</div> -->
+      <div class="row">
+    <img src="https://developer.sabre.com/sites/default/files/2019-10/Picture4-1-1024x242_3.png" alt="Logo formularios">
+</div>
       <section class="row">
         <div class="col">
-          <h2>Registro de Estudiantes</h2>
+            <form class="form1">
+          <h2 class="mt-3">Registro de Paises</h2>
           <div class="mb-3">
-            <label for="Nombre" class="form-label">Nombre</label>
+            <label for="Pais" class="form-label">Ingrese un País</label>
             <input
               type="text"
               class="form-control"
-              id="Nombre"
-              placeholder="Nombre"
+              id="pais"
+              placeholder="País"
             />
           </div>
-          <div class="mb-3">
-            <label for="Apellido" class="form-label">Apellido</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Apellido"
-              placeholder="Apellido"
-            />
-          </div>
-          <form class="row g-3">
-            <div class="col-mb-3">
-              <label for="Correo" class="form-label">Correo</label>
-              <input
-                type="email"
-                class="form-control"
-                id="Correo"
-                placeholder="Correo"
-              />
-            </div>
             <div class="col-12">
-              <label for="Ciudad" class="form-label">Ciudad</label>
-              <input
-                type="text"
-                class="form-control"
-                id="Ciudad"
-                placeholder="Ciudad"
-              />
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="gridCheck"
-                />
-                <label class="form-check-label" for="gridCheck">
-                  Aceptar términos y condiciones
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Registrar</button>
+              <button class="btn btn-primary" id="botonAgregar">Agregar</button>
             </div>
           </form>
+          <div id="contenedorPaises">
+
+          </div>
         </div>
         <div class="col">
-          <h2>Promedio de Estudiantes</h2>
+          <h2 class="mt-3">Promedio de Estudiantes</h2>
           <div class="col-md-4">
             <label for="Estudiante" class="form-label">Estudiante</label>
-            <select id="Estudiante" class="form-select mb-3">
+            <select id="estudiante" class="form-select mb-3">
               <option selected>Elige</option>
               <option>Moises</option>
               <option>Jeanfranco</option>
@@ -99,13 +63,15 @@
             </select>
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="arroba">@</span>
             <input
               type="text"
               class="form-control"
+              id="username"
               placeholder="Username"
               aria-label="Username"
               aria-describedby="basic-addon1"
+              required
             />
           </div>
           <div class="row">
@@ -113,39 +79,41 @@
               <input
                 type="text"
                 class="form-control"
+                id="nota1"
                 placeholder="Nota 1"
                 aria-label="Nota 1"
+                required
               />
             </div>
             <div class="col">
               <input
                 type="text"
                 class="form-control"
+                id="nota2"
                 placeholder="Nota 2"
                 aria-label="Nota 2"
+                required
               />
             </div>
             <div class="col">
               <input
                 type="text"
                 class="form-control"
+                id="nota3"
                 placeholder="Nota 3"
                 aria-label="Nota 3"
+                required
               />
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary mt-3">
+              <button
+                class="btn btn-primary mt-3"
+                id="botonCalcular"
+                onclick="calcular()">
                 Calcular
               </button>
             </div>
-            <div class="mb-2 mt-3">
-              <input
-                type="text"
-                class="form-control"
-                id="Promedio"
-                placeholder="Promedio"
-              />
-            </div>
+            <div id="promedio"></div>
           </div>
         </div>
       </section>
